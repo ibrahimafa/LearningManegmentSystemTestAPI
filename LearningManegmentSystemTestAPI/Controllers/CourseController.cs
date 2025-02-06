@@ -56,5 +56,11 @@ namespace LearningManegmentSystemTestAPI.Controllers
         }
 
 
+        [HttpDelete]
+        public IActionResult DeleteCoursse(int id)
+        {
+            icourseService.deleteCourse(id);
+            return Ok();
+        }
     }
 }
